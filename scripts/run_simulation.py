@@ -36,7 +36,7 @@ def main():
     camera_cfg = OmegaConf.load(os.path.join(base_dir, 'config', 'camera.yaml'))
     
     # Merge config
-    config = OmegaConf.merge(sim_cfg, robot_cfg, lidar_cfg)
+    config = OmegaConf.merge(sim_cfg, robot_cfg, lidar_cfg, camera_cfg)
     
     print("Initializing Simulation Environment...")
     loop = SimulationLoop(config)
