@@ -25,7 +25,6 @@ From the repository root, activate the virtual environment and start the interac
 ```powershell
 python scripts\run_simulation.py
 ```
-
 Use the arrow keys to drive the robot:
 
 - Up arrow: drive forward
@@ -41,7 +40,7 @@ Use the arrow keys to drive the robot:
 ```powershell
 python scripts\run_simulation.py
 ```
-
+<img width="1282" height="983" alt="Στιγμιότυπο οθόνης 2026-09-18 095951" src="https://github.com/user-attachments/assets/ffb8e6dc-8253-47a0-8eab-c2f5c80009bf" />
 Starts the PyBullet environment and robot simulation. This is the simplest way to inspect the simulated scene and sensor behavior.
 
 ### LiDAR odometry
@@ -57,6 +56,8 @@ Builds an ICP-based estimated trajectory while the robot is driven. Press `Ctrl+
 ```powershell
 python scripts\build_lidar_map.py
 ```
+<img width="1043" height="866" alt="Στιγμιότυπο οθόνης 2026-09-18 100040" src="https://github.com/user-attachments/assets/6e1e001f-cdbe-4361-a01c-be1e81f7f62e" />
+<img width="892" height="867" alt="Στιγμιότυπο οθόνης 2026-09-18 100026" src="https://github.com/user-attachments/assets/25cc3eac-fc9b-4ca9-84b7-ead8b20e3eb7" />
 
 Accumulates LiDAR scans in the world frame and opens an Open3D point-cloud visualization when the program is stopped with `Ctrl+C`.
 
@@ -65,6 +66,7 @@ Accumulates LiDAR scans in the world frame and opens an Open3D point-cloud visua
 ```powershell
 python scripts\visualize_sensor_fusion.py
 ```
+<img width="1916" height="1023" alt="Στιγμιότυπο οθόνης 2026-09-17 172919" src="https://github.com/user-attachments/assets/93135243-2b4e-432b-9156-4c64c545d2b6" />
 
 Projects visible LiDAR points into the camera image and displays the overlaid result in an OpenCV window. Drive the robot with the arrow keys and stop with `Ctrl+C`.
 
